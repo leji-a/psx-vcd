@@ -1,0 +1,38 @@
+[package]
+name = "psx-vcd"
+version = "0.1.0"
+edition = "2021"
+authors = ["leji-a <toviya3135@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "Automatic PSX BIN/CUE to VCD converter for OPL/POPSTARTER"
+repository = "https://github.com/leji-a/psx-vcd"
+readme = "README.md"
+keywords = ["playstation", "psx", "vcd", "opl", "popstarter"]
+categories = ["command-line-utilities", "multimedia", "games"]
+rust-version = "1.74"
+include = ["Cargo.toml", "src/**", "LICENSE-*"]
+readme = "README.md"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+# Links to related projects
+[package.metadata.links]
+cue2pops = "https://github.com/tallero/cue2pops-linux.git"
+psx-combine = "https://github.com/ADBeta/psx-comBINe.git"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+regex = "1.10"
+
+[[bin]]
+name = "psx-vcd"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
