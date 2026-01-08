@@ -131,8 +131,8 @@ This tool implements the cue2pops v2.0 VCD format specification:
 
 Licensed under either of:
 
-- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE)
-- MIT license ([LICENSE-MIT](LICENSE-MIT)
+- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE))
+- MIT license ([LICENSE-MIT](LICENSE-MIT))
 
 ## Contributing
 
