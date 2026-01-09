@@ -22,7 +22,7 @@ cargo install psx-vcd
 ### Build from source
 
 ```bash
-git clone https://github.com/yourusername/psx-vcd
+git clone https://github.com/leji-a/psx-vcd
 cd psx-vcd
 cargo build --release
 ```
@@ -111,6 +111,7 @@ SLUS_XXX.XX.GameName.VCD
 ```
 
 Where:
+
 - `SLUS_XXX.XX` is the detected Game ID
 - `GameName` is the cleaned game name
 
@@ -122,6 +123,7 @@ Where:
 ## Technical Details
 
 This tool implements the cue2pops v2.0 VCD format specification:
+
 - 1MB VCD header with TOC (Table of Contents) information
 - Proper MSF (Minutes:Seconds:Frames) calculation for multi-track games
 - BCD (Binary-Coded Decimal) encoding for time values
